@@ -34,8 +34,8 @@ const Contact = () => {
                 </svg>
               </div>
               <h4>Website</h4>
-              <a href="https://yxdu.uz">
-                <span>yxdu.uz</span>
+              <a href="https://yxtu.uz">
+                <span>yxtu.uz</span>
               </a>
             </div>
           </div>
