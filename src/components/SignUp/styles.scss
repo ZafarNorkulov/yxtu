@@ -1,0 +1,85 @@
+.register {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+    max-width: 80%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    color: #207dff;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &__wrapper {
+    max-width: 65vw;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+  form {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    row-gap: 2rem;
+    margin: 0 auto;
+  }
+  button {
+    width: max-content;
+    padding: 0.5rem 1rem;
+    background: #207dff;
+    outline: none;
+    border-color: #207dff;
+    border-radius: 2rem;
+    box-shadow: none;
+  }
+  .btn-wrap {
+    padding: 2px;
+    // background-color: #207dff;
+    width: max-content;
+    // height: 1px;
+    border-radius: 2rem;
+    border: 2px solid #207dff;
+    margin: 0 auto;
+  }
+
+  .login-input-box {
+    position: relative;
+
+    label {
+      position: absolute;
+      top: 7px !important;
+      left: 0px;
+      font-size: 16px;
+      transition: 0.2s;
+      pointer-events: none;
+      font-weight: 400;
+      line-height: 116.3%;
+      color: #000;
+    }
+    input {
+      width: 100%;
+      outline: none;
+      font-size: 17px;
+      padding: 7px 5px;
+      border: none;
+      border-bottom: 1px solid #e5e5e5;
+      background: transparent;
+      border-radius: 0px;
+      color: #000;
+    }
+    .login-input-box input:focus {
+      border-bottom: 2px solid #000 !important;
+    }
+    input:focus ~ label,
+    input:valid ~ label {
+      top: -15px !important;
+      font-size: 12px !important;
+      padding: 0 5px !important;
+    }
+  }
+}

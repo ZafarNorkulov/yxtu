@@ -1,0 +1,16 @@
+// Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+// Fonts
+@import "./fonts.scss";
+
+// Components
+@import "../components/Header/styles.scss";
+@import "../components/Hero/styles.scss";
+@import "../components/About/styles.scss";
+@import "../components/GeneralInfo/styles.scss";
+@import "../components/ForApplicant/styles.scss";
+@import "../components/Loader/styles.scss";
+@import "../components/Contact/styles.scss";
+@import "../components/SignUp/styles.scss";
+@import "../components/TechnicumFrame/styles.scss";

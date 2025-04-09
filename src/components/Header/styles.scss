@@ -1,0 +1,108 @@
+.my-head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  padding: 0.6rem 0;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 10px 5px #bbb;
+  width: 100vw;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  max-width: 30%;
+  color: #111;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-family: Circular, Arial, sans-serif;
+  column-gap: 5px;
+
+  img {
+    max-width: 22%;
+  }
+}
+
+.navbar {
+  .nav-link {
+    span {
+      font-family: "Poppins", Arial, sans-serif;
+      letter-spacing: 0.3px;
+      color: #000;
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background: rgba(33, 125, 255, 0.925);
+        height: 3px;
+        border-radius: 4px;
+        width: 0;
+        transition: all 0.2s ease-in;
+        -webkit-transition: all 0.3s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        -ms-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+      }
+      &:hover:after {
+        width: 90%;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+  .active {
+    background: transparent !important;
+    position: relative;
+    color: #207dff !important;
+    &:after {
+      &:focus {
+        width: 100%;
+        background: red;
+      }
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      background: rgba(33, 125, 255, 0.925);
+      height: 3px;
+      border-radius: 4px;
+      width: 0;
+      transition: all 0.2s ease-in;
+      -webkit-transition: all 0.3s ease-in;
+      -moz-transition: all 0.2s ease-in;
+      -ms-transition: all 0.2s ease-in;
+      -o-transition: all 0.2s ease-in;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      -o-border-radius: 4px;
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  .logo {
+    max-width: 40%;
+    font-size: 12px;
+    img {
+      width: 30%;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .my-head {
+    .navbar-collapse {
+      margin-top: 1rem;
+    }
+    .logo {
+      font-size: 10px;
+      max-width: 50%;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.contact {
+  text-align: center;
+  &__title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 5rem;
+  }
+  .card__wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    row-gap: 1.5rem;
+    background: #f7f9faff;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    &:hover {
+      background: #207dff;
+      p {
+        color: rgba($color: #fff, $alpha: 0.8);
+      }
+      a {
+        color: #323447;
+      }
+    }
+  }
+  .box {
+    background: #fff;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #1a1a1a;
+    margin: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    letter-spacing: 0.5px;
+  }
+  p {
+    font-size: 18px;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact {
+    &__title {
+      font-size: 2.5rem;
+      margin-bottom: 4rem;
+    }
+    .card__wrap {
+      row-gap: 1rem;
+    }
+    a,
+    p {
+      font-size: 16px;
+    }
+  }
+}
+@media only screen and (max-width: 576px) {
+  .contact {
+    .card__wrap {
+      height: 310px;
+    }
+    &__title {
+      margin-bottom: 3rem;
+    }
+  }
+}

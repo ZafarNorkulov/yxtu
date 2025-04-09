@@ -1,0 +1,35 @@
+.frame {
+  &__head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  h3 {
+    display: flex;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0 auto;
+  }
+  &__photos {
+    display: block;
+    margin: 5%;
+  }
+  img {
+    border-radius: 6px;
+    margin: 5px auto;
+  }
+  img:nth-child(odd) {
+    padding-right: 0.5rem;
+  }
+  img:nth-child(2n) {
+    padding-left: 0.5rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .frame {
+    h3 {
+      font-size: 32px;
+    }
+  }
+}

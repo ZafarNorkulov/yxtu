@@ -1,0 +1,9 @@
+.loader {
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  background: rgba($color: #fff, $alpha: 0.6);
+}
